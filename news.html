@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./news.css" />
+    <script
+      src="https://kit.fontawesome.com/e236dc9dfa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/MainpageImg/logo.png" class="logopng" />
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" id="closemenu"></i>
+          <ul>
+            <!-- <li><a href=""> WHY SHAHRZAAD </a></li> -->
+            <li><a href="./mainPage.html"> HOME </a></li>
+            <li><a href="./faqpage.html"> FAQ </a></li>
+            <!-- <li> <a href="" class="btnLogin-pop"> LOGIN </a></li> -->
+            <button type="button" class="btnLogin">LOGIN</button>
+            <li><a href="./signInPage.html"> SIGN-IN </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menubar"></i>
+      </nav>
+      <div class="login">
+        <span class="iconClose" id="closeLogin"
+          ><i class="fa-solid fa-xmark fa-lg"></i
+        ></span>
+        <div class="login-formbox">
+          <h2>login</h2>
+          <form action="#">
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-envelope fa-lg"></i>
+              </span>
+              <input type="email" />
+              <label>Email:</label>
+            </div>
+
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-lock fa-lg"></i>
+              </span>
+              <input type="password" />
+              <label>Password:</label>
+            </div>
+            <!-- <div class="remember-forgot">
+              <label><input type="checkbox" />Remember Me</label>
+              <a href="#">Forgot Password?</a>
+            </div> -->
+            <button
+              class="submit"
+              onclick="window.location.href = 'userPage.html';"
+              type="button"
+            >
+              login
+            </button>
+            <div class="login-register">
+              <p>
+                Do you have an account?
+                <a href="#" class="register-link">register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="maindiv">
+      <main>
+        <div class="content">
+          <div class="innerdiv">
+            <img class="img" src="./images/News/internet-security.jpg" />
+            <p>
+              In order to value our customers' privacy, extra security layers
+              will soon be added to transactions. Amir Talebi - CO-Founder -
+              Says: one of our main goals is to provide a safe place for clients
+              where they can transfer their money online without worrying about
+              the required security. And I believe we will get there soon!
+            </p>
+          </div>
+          <hr />
+
+          <div class="innerdiv">
+            <img
+              class="img"
+              src="./images/News/savings-checkings-accounts_illustration.original.png"
+            />
+            <p>
+              We recently increased our supported account types. Shahrzad now
+              supports three different types:<br />
+              1. Cheque Account
+              <br />2. Savings account <br />3. Recurring deposit
+            </p>
+          </div>
+          <hr />
+          <div class="innerdiv">
+            <img class="img" src="./images/News/star-award.jpeg" />
+            <p>
+              Shahrzad was awarded as one of the "LEADNIG" banks in the
+              country.<br />
+              Last week, according to a poll done by the government, Shahrzad
+              ranked first in popularity among the people specially people agaed
+              between 20-30. Shahrzad appreciates this favor and will try its
+              best to be even better because you deserve that.
+            </p>
+          </div>
+          <hr />
+          <div class="innerdiv">
+            <img class="img" src="./images/News/contrato-bancario-1.jpg" />
+            <p>
+              Shahrzad will soon launch deep online connections with other big
+              bank of the country so the customers will be able to transfer
+              their money with ease. It's been a while Shahrzad have considered
+              this item and it will probably come true next week. Shahrzad will
+              also sign various financial contracts with "Melli Bank", "Sepah
+              Bank", "Mellat Bank" and "Keshavarzi Bank".
+            </p>
+          </div>
+          <hr />
+          <div class="innerdiv">
+            <img class="img" src="./images/News/account.jpg" />
+            <p>
+              From now on, You do NOT need starting amount to be able to create
+              an account (OF Any Type) in Shahrzad bank. Due to the recent
+              decision of Co-Founders, customers of Shahrzad can create any type
+              of account without needing any Starting amount for that. What else
+              does a bank do?
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./mainPage.js"></script>
+  </body>
+</html>

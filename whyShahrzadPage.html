@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./whyShahrzadPage.css" />
+    <script
+      src="https://kit.fontawesome.com/e236dc9dfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Why Shahrzad</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/MainpageImg/logo.png" class="logopng" />
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" id="closemenu"></i>
+          <ul>
+            <!-- <li><a href=""> WHY SHAHRZAAD </a></li> -->
+            <li><a href="./news.html"> NEWS </a></li>
+            <li><a href="./mainPage.html"> HOME </a></li>
+            <!-- <li> <a href="" class="btnLogin-pop"> LOGIN </a></li> -->
+            <button type="button" class="btnLogin">LOGIN</button>
+            <li><a href="./signInPage.html"> SIGN-IN </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menubar"></i>
+      </nav>
+      <div class="login">
+        <span class="iconClose" id="closeLogin"
+          ><i class="fa-solid fa-xmark fa-lg"></i
+        ></span>
+        <div class="login-formbox">
+          <h2>login</h2>
+          <form action="#">
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-envelope fa-lg"></i>
+              </span>
+              <input type="email" />
+              <label>Email:</label>
+            </div>
+
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-lock fa-lg"></i>
+              </span>
+              <input type="password" />
+              <label>Password:</label>
+            </div>
+            <!-- <div class="remember-forgot">
+              <label><input type="checkbox" />Remember Me</label>
+              <a href="#">Forgot Password?</a>
+            </div> -->
+            <button
+              class="submit"
+              onclick="window.location.href = 'userPage.html';"
+              type="button"
+            >
+              login
+            </button>
+            <div class="login-register">
+              <p>
+                Do you have an account?
+                <a href="./signInPage.html" class="register-link">register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Why should you choose shahrzad?</h2>
+      <div class="allCards">
+        <div class="card">
+          <img
+            src="./images/why shahrzad/GettyImages-649699796-scaled.jpg"
+            alt=""
+          />
+          <p>
+            With modern ways of banking Shahrzad will help you save a huge
+            amount of your time.<br />
+            TIME is GOLD
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./images/why shahrzad/3d-internet-secuirty-badge-scaled.jpg"
+            alt=""
+          />
+          <p>
+            Shahrzad's security is beyond imagination. No hacker can get
+            through!
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./images/why shahrzad/iStock-682395884.tashka2000.online.banking-5c7474ef46e0fb00018bd6c5.jpg"
+            alt=""
+          />
+          <p>
+            Thanks to the Internet, anything in Shahrzad is done remotely. You
+            can create a Real bank account and do all your banking on a sofa!
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./images/why shahrzad/Smartphone-mobile-banking.png"
+            alt=""
+          />
+          <p>
+            You can use Shahrzad all over the world! We are the only domestic
+            bank giving you this opportunity.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./images/why shahrzad/bonus-key-shows-extra-gift-or-gratuity-online-SBI-300167771-1-scaled.webp"
+            alt=""
+          />
+          <p>
+            Joining Shahrzad community will get you a monthly bonus depending on
+            your account balance.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./images/why shahrzad/loans-isometric-flowchart-composition-with-isolated-banking-equipment-images-electronics-money-pictograms-with-text-captions_1284-28139.avif"
+            alt=""
+          />
+          <p>
+            Bank Loans will soon be supported by Shahrzad. With higher amounts
+            for the customers and lower profits for the bank.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./mainPage.js"></script>
+  </body>
+</html>

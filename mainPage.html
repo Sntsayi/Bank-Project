@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>ShahrzadBank</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/MainpageImg/titlelogo2.png"
+    />
+    <link rel="stylesheet" href="./mainPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e236dc9dfa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <img src="./images/MainpageImg/logo.png" class="logopng" />
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" id="closemenu"></i>
+          <ul>
+            <!-- <li><a href=""> WHY SHAHRZAAD </a></li> -->
+            <li><a href="./news.html"> NEWS </a></li>
+            <li><a href="./faqpage.html"> FAQ </a></li>
+            <!-- <li> <a href="" class="btnLogin-pop"> LOGIN </a></li> -->
+            <button type="button" class="btnLogin">LOGIN</button>
+            <li><a href="./signInPage.html"> SIGN-IN </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menubar"></i>
+      </nav>
+      <div class="login">
+        <span class="iconClose" id="closeLogin"
+          ><i class="fa-solid fa-xmark fa-lg"></i
+        ></span>
+        <div class="login-formbox">
+          <h2>login</h2>
+          <form action="#">
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-envelope fa-lg"></i>
+              </span>
+              <input type="email" />
+              <label>Email:</label>
+            </div>
+
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-lock fa-lg"></i>
+              </span>
+              <input type="password" />
+              <label>Password:</label>
+            </div>
+            <!-- <div class="remember-forgot">
+              <label><input type="checkbox" />Remember Me</label>
+              <a href="#">Forgot Password?</a>
+            </div> -->
+            <button
+              class="submit"
+              onclick="window.location.href = 'userPage.html';"
+              type="button"
+            >
+              login
+            </button>
+            <div class="login-register">
+              <p>
+                Do you have an account?
+                <a href="./signInPage.html" class="register-link">register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="text-box">
+        <h1>Welcome To The SHAHRZAD Bank</h1>
+        <p>
+          Shahrzad bank is now one of the bests in world<br />
+          Trust and get the best results.
+        </p>
+        <a href="./whyShahrzadPage.html" class="hero-btn"
+          >Why &nbsp; Shahrzad?</a
+        >
+      </div>
+    </header>
+
+    <!------------------------ some information of bank ------------------------->
+    <main>
+      <section class="facilities">
+        <h1>Bank properties</h1>
+        <p>You will be amazed of what we have to offer</p>
+
+        <div class="row">
+          <div class="facilities-col">
+            <img
+              src="./images/why shahrzad/3d-internet-secuirty-badge-scaled.jpg"
+            />
+            <h3>Incredible Safety</h3>
+            <p>
+              To value customers' privacy, any data in Shahrzad bank is
+              encrypted.
+            </p>
+          </div>
+          <div class="facilities-col">
+            <img src="./images/why shahrzad/0000213760-clock0011-050.jpg" />
+            <h3>The most time-saving bank ever!</h3>
+            <p>
+              WIthout the need to go out for any small banking work, you will
+              save hours of your time.
+            </p>
+          </div>
+          <div class="facilities-col">
+            <img
+              src="./images/why shahrzad/loans-isometric-flowchart-composition-with-isolated-banking-equipment-images-electronics-money-pictograms-with-text-captions_1284-28139.avif"
+            />
+            <h3>Loans will soon be suported by Shahrzad.</h3>
+            <p>
+              Loans with higher amounts for customers and lower benefits for the
+              bank are on the way!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- Testimonials ----------------------->
+
+      <section class="testimonials">
+        <h1>What do our customers say about us?</h1>
+        <p>
+          we highly value and care for the feedback we get from our customers.
+        </p>
+
+        <div class="row">
+          <div class="testimonial-col">
+            <img src="./images/why shahrzad/peyman (2).jpg" />
+            <div>
+              <p>
+                Getting to know Shahrzad has absolutely been a great experience.
+                If you ask me, I prefer shahrzad over any other bank in the
+                country.
+              </p>
+              <h3>Reza Sedaghat</h3>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+          </div>
+          <div class="testimonial-col">
+            <img src="./images/why shahrzad/peyman (1).jpg" />
+            <div>
+              <p>
+                I don't say Shahrzad is a bad bank, but there are plenty of
+                things that could be better. I hope Things improve in future.
+              </p>
+              <h3>Peyman Khorasani</h3>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------ Footer ---------------------------->
+
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>You can contact us via the following links.</p>
+        <div class="icons">
+          <a href="https://t.me/Sntsayi"
+            ><i class="fa-brands fa-telegram fa-lg"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+          <a href="https://instagram.com/sahraei_5246"
+            ><i class="fa-brands fa-instagram fa-lg"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./mainPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./moneyTransfer2.css" />
+    <title>Transfer(Continue)</title>
+    <script
+      src="https://kit.fontawesome.com/e236dc9dfa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logopng">
+        <img src="./images/MainpageImg/logo.png" alt="" />
+      </div>
+    </header>
+    <div class="maindiv">
+      <main>
+        <div class="center-div">
+          <div class="text">
+            <p>Peyment Confirmation:</p>
+          </div>
+          <div class="form">
+            <form action="">
+              <div class="destinationCardNumber">
+                <label class="title" for="">DestCardNumber:</label>
+                <label
+                  class="cardNumber"
+                  id="destcard"
+                  type="text"
+                  maxlength="16"
+                  >asdda</label
+                >
+              </div>
+              <div class="originCardNumber">
+                <label class="title" for="">OriginCardNumber:</label>
+                <label
+                  class="cardNumber"
+                  id="origCard"
+                  type="text"
+                  maxlength="16"
+                  >assad</label
+                >
+              </div>
+              <div class="how-much">
+                <label class="title" for="">How much:</label>
+                <label class="cardNumber" id="muchpage2" type="text"
+                  >asds</label
+                >
+              </div>
+            </form>
+            <!-- create captcha -->
+            <div class="wrapper">
+              <div class="captcha-area">
+                <div class="captcha-img">
+                  <!-- <img src="" alt=""> -->
+                  <span class="captcha"></span>
+                </div>
+                <button class="rerload-btn">
+                  <i class="fa-solid fa-rotate-right fa-lg"></i>
+                </button>
+              </div>
+              <form action="#" class="input-area">
+                <input
+                  class="inputCaptcha"
+                  type="text"
+                  placeholder="Enter captcha"
+                  maxlength="6"
+                  required
+                />
+                <button class="check-btn">check</button>
+              </form>
+              <div class="status-txt"></div>
+            </div>
+            <div class="transitionbtn">
+              <button type="button">Transition</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./moneyTransfer2.js"></script>
+  </body>
+</html>

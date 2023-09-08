@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./images/MainpageImg/background.jpg);
+  backdrop-filter: blur(7px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logopng img {
+  width: 14rem;
+  height: 11rem;
+}
+.maindiv {
+  margin-top: 1rem;
+  width: 100%;
+}
+main {
+  width: calc(100% - 5rem);
+  margin: 60px auto;
+  background-color: transparent;
+  border-radius: 2rem;
+  display: flex;
+  padding: 3rem;
+}
+main .leftdiv {
+  width: 80%;
+  padding: 30px;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .rightdiv {
+  width: 90%;
+  height: auto;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 20px;
+}
+/* css for bankCard (leftdiv)*/
+.card {
+  width: 500px;
+  height: 300px;
+  color: #fff;
+  perspective: 1000px;
+}
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  background: #0d5b02;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-number {
+  font-size: 35px;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+.card-info {
+  font-size: 12px;
+  margin-top: 40px;
+}
+.card-info p {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.infoFromJava {
+  font-size: 22px;
+  margin-top: 15px;
+}
+/* css for back of the bank card */
+.back {
+  transform: rotateY(180deg);
+}
+.bar {
+  background: #000;
+  margin-left: -30px;
+  margin-right: -30px;
+  height: 60px;
+  margin-top: 10px;
+}
+.back .box {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.back .box .text-info {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+.back img {
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 10px;
+}
+/* rotating for back of the card */
+.card:hover .card-inner {
+  transform: rotateY(-180deg);
+}
+/* css for rightdiv */
+.rightdiv form label {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.rightdiv form input {
+  color: #fff;
+  width: 400px;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  transition: all 0.6s;
+}
+.rightdiv form input:focus {
+  border-bottom: 1px solid #46ed04;
+}
+/* for rispansive */
+@media (max-width: 700px) {
+  main {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    margin: 60px auto;
+  }
+  main .leftdiv {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+  }
+  .card {
+    width: 100%;
+    height: 300px;
+  }
+  .card-number {
+    font-size: 23px;
+  }
+  main .rightdiv {
+    width: 100%;
+    padding: 20px;
+    display: block;
+    margin: 0px;
+  }
+}

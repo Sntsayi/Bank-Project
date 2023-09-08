@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./userBtn.css" />
+    <title>UserInfo</title>
+  </head>
+  <body>
+    <header>
+      <div class="logopng">
+        <img src="./images/MainpageImg/logo.png" alt="" />
+      </div>
+    </header>
+    <div class="main-div">
+      <main>
+        <!-- for img and bank card information -->
+        <div class="top-div">
+          <div class="left-div">
+            <div class="card">
+              <img
+                src="./images/userPng/user-2-512.png"
+                id="profile-pic"
+                alt=""
+              />
+              <label for="input-file">Upload image</label>
+              <input
+                type="file"
+                accept="image/jpeg, image/png, image/jpg "
+                id="input-file"
+              />
+            </div>
+          </div>
+          <div class="right-div">
+            <form action="">
+              <div>
+                <label for="">FirstName:</label>
+                <input type="text" />
+              </div>
+
+              <br />
+              <br />
+              <div>
+                <label for="">LastName:</label>
+                <input type="text" />
+              </div>
+
+              <br />
+              <br />
+              <div>
+                <label for="">Date of Birth:</label>
+                <input type="text" />
+              </div>
+
+              <br />
+              <br />
+              <div>
+                <label for="">Account type:</label>
+                <input type="text" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- .....for additional information....... -->
+        <div class="middle-div">
+          <div class="left-div">
+            <form action="">
+              <div>
+                <label for="">National code:</label>
+                <input type="text" />
+              </div>
+
+              <br />
+              <br />
+              <div>
+                <label for="">Marriage status:</label>
+                <input type="text" />
+              </div>
+            </form>
+          </div>
+          <div class="right-div">
+            <form action="">
+              <div>
+                <label for="">Account balance:</label>
+                <input type="text" />
+              </div>
+
+              <br />
+              <br />
+              <div>
+                <label for="">Creation date:</label>
+                <input type="text" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./userBtn.js"></script>
+  </body>
+</html>

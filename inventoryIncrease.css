@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+body {
+  background: url(./images/MainpageImg/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(7px);
+}
+.logopng img {
+  width: 14rem;
+  height: 11rem;
+}
+
+.container1 {
+  min-height: 100vh;
+  /* background: #fff; */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+}
+.container1 form {
+  background-color: #120e0e;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px #0000;
+  padding: 20px;
+  width: 600px;
+  padding-top: 160px;
+}
+.container1 form .inputBox {
+  margin-top: 20px;
+  color: black;
+}
+.container1 form .inputBox span {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding-bottom: 5px;
+}
+.container1 form .inputBox input,
+.container1 form .inputBox select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  caret-color: #000;
+}
+.container1 form .felxbox {
+  display: flex;
+  gap: 15px;
+}
+.container1 form .felxbox .inputBox {
+  flex: 1 1 150px;
+}
+.container1 form .submit-btn {
+  width: 100%;
+  background: linear-gradient(45deg, rgb(20, 10, 195), rgb(20, 255, 20));
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  /* break-before: 5px; */
+}
+.container1 form .submit-btn:hover {
+  letter-spacing: 2px;
+  opacity: 0.8px;
+}
+/* css for bankcard  */
+.container1 .card-container {
+  margin-bottom: -150px;
+  position: relative;
+  height: 250px;
+  width: 400px;
+}
+.container1 .card-container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #2a05e3;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+}
+.container1 .card-container .front .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2px;
+}
+.container1 .card-container .front .image img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+.container1 .card-container .front .image .leftimg {
+  width: 70px;
+  height: 70px;
+}
+.container1 .card-container .front .image .rightimg {
+  width: 90px;
+  height: 80px;
+}
+.container1 .card-container .front .card-number-box {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 22px;
+  color: #fff;
+}
+.container1 .card-container .front .felxbox {
+  display: flex;
+}
+.container1 .card-container .front .box:nth-child(1) {
+  margin-right: auto;
+}
+.container1 .card-container .front .box {
+  font-size: 15px;
+  color: #fff;
+}
+/* css for back of the bankcard */
+.container1 .card-container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #2a05e3;
+  border-radius: 1rem;
+  padding: 20px 0;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15 25 rgba(0, 0, 0, 0.3);
+  transform: perspective(1000px) rotateY(180deg);
+  transition: transform 0.4s ease-out;
+}
+.container1 .card-container .back img {
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 10px;
+}
+.container1 .card-container .back .stripe {
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+.container1 .card-container .back .box {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container1 .card-container .back .box .text-info {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+/* css for dynamic-password */
+.dynamic-password {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+.btn-dynamicpassword button {
+  width: 100%;
+  background: linear-gradient(45deg, rgb(12, 0, 243), rgb(114, 5, 231));
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 45px;
+  /* margin-right: 10px; */
+  padding: 10px;
+  /* padding-right: 10px; */
+  font-size: 15px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.btn-dynamicpassword button:hover {
+  letter-spacing: 1px;
+}
+.input-dynamicpassword {
+  margin-right: 20px;
+}
+
+.input-dynamicpassword input {
+  margin-top: 20px;
+  padding-right: 30px;
+  width: 100%;
+  height: 45px;
+}
+.timer {
+  padding-left: 8px;
+  display: felx;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  width: 60px;
+  height: 45px;
+  margin-top: 20px;
+  margin-right: 150px;
+  background: #fff;
+  border-radius: 70%;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  color: #f70101;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-decoration: underline;
+}
+.request-btn .timeout {
+  transition: 2s;
+}
+/* for rispansive */
+@media (max-width: 700px) {
+  .container1 {
+    margin-top: 30px;
+  }
+  .container1 form {
+    background-color: #120e0e;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px #0000;
+    padding: 20px;
+    width: 400px;
+    padding-top: 160px;
+  }
+  /* for bankcard */
+  .container1 .card-container {
+    height: 200x;
+    width: 330px;
+  }
+  .inputBox input {
+    margin-top: 17px;
+  }
+  .dynamic-password {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+  }
+  .timer {
+    margin-left: 30px;
+    display: inline;
+    justify-content: left;
+    width: 85px;
+  }
+  .input-dynamicpassword input {
+    width: 200pxpx;
+    height: 45px;
+  }
+}

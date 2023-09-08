@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./images/MainpageImg/background.jpg);
+  backdrop-filter: blur(7px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logopng img {
+  width: 14rem;
+  height: 11rem;
+}
+.maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  /* background-color: rgb(4, 37, 170); */
+  width: calc(100% - 6rem);
+  /* height: auto; */
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+.center-div {
+  background-color: rgb(240, 240, 240);
+  /* width: calc(100% - 42rem); */
+  width: 100%;
+  margin: 7rem 22rem;
+  height: auto;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 4px 4px 10px #fff;
+}
+.center-div .text {
+  margin: 2rem 5.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.center-div .text p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-shadow: 2px 1px 20px rgb(0, 0, 0);
+}
+.center-div .form {
+  /* background-color: aqua; */
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* .center-div .form form{
+
+} */
+form .destinationCardNumber {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+form .how-much {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-top: 28px;
+}
+form input {
+  width: 30rem;
+  height: 100%;
+  font-size: 1rem;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+form label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: rgb(90, 93, 96);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form input:focus ~ label,
+form input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #040669;
+}
+form .underline {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+}
+form .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgb(8, 3, 81);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+form input:focus ~ .underline:before,
+form input:valid ~ .underline:before {
+  transform: scaleX(1);
+}
+.btnContinue button {
+  margin-top: 2rem;
+  padding: 8px;
+  margin-left: 175px;
+  border-radius: 7px;
+  border: 3px solid black;
+  transition: all 0.8s;
+  color: #fff;
+  width: 120px;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #000;
+  cursor: pointer;
+}
+.btnContinue button:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* for rispansive */
+@media (max-width: 700px) {
+  form .destinationCardNumber {
+    width: 200px;
+    position: relative;
+  }
+  form input {
+    width: 18rem;
+    height: 100%;
+    font-size: 1rem;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+  }
+  form .underline {
+    height: 2px;
+    width: 0px;
+  }
+  .center-div .text {
+    margin: 2rem 0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .center-div .text p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-shadow: 2px 1px 20px rgb(0, 0, 0);
+  }
+  .btnContinue button {
+    margin-left: 85px;
+  }
+}

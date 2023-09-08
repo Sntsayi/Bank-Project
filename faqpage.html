@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ(Frequently Asked Questions)</title>
+    <link rel="stylesheet" href="./faqpage.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/e236dc9dfa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+          <nav>
+        <img src="./images/MainpageImg/logo.png" class="logopng" />
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" id="closemenu"></i>
+          <ul>
+            <!-- <li><a href=""> WHY SHAHRZAAD </a></li> -->
+            <li><a href="./news.html"> NEWS </a></li>
+            <li><a href="./mainPage.html"> HOME </a></li>
+            <!-- <li> <a href="" class="btnLogin-pop"> LOGIN </a></li> -->
+            <button type="button" class="btnLogin">LOGIN</button>
+            <li><a href="./signInPage.html"> SIGN-IN </a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menubar"></i>
+      </nav>
+      <div class="login">
+        <span class="iconClose" id="closeLogin"
+          ><i class="fa-solid fa-xmark fa-lg"></i
+        ></span>
+        <div class="login-formbox">
+          <h2>login</h2>
+          <form action="#">
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-envelope fa-lg"></i>
+              </span>
+              <input type="email" />
+              <label>Email:</label>
+            </div>
+
+            <div class="inputbox">
+              <span class="icon">
+                <i class="fa-solid fa-lock fa-lg"></i>
+              </span>
+              <input type="password" />
+              <label>Password:</label>
+            </div>
+            <!-- <div class="remember-forgot">
+              <label><input type="checkbox" />Remember Me</label>
+              <a href="#">Forgot Password?</a>
+            </div> -->
+           <button
+              class="submit"
+              onclick="window.location.href = 'userPage.html';"
+              type="button"
+            >
+              login
+            </button>
+            <div class="login-register">
+              <p>
+                Do you have an account?
+                <a href="./signInPage.html" class="register-link">register</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="center-div">
+      <div class="FAQpage">
+        <h1>FAQ(Frequently Asked Question)</h1>
+        <div class="allQuestion">
+            <div class="faq active">
+        <h3 class="faq-title">Is it safe to do your banking online?</h3>
+        <p class="faq-text">In one word; YES! <br>Shahrzad highly values customers' privacy and encrypts all the data.</p>
+        <button class="faq-toggle">
+          <i class="fa-solid fa-chevron-down"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+      <div class="faq">
+        <h3 class="faq-title">
+          Does Shahrzad have a physical branch?
+        </h3>
+        <p class="faq-text">No. Shahrzad bank does not have any physical branch. Any action is done through the internet.</p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Where is Shahrzad located?
+        </h3>
+        <p class="faq-text">Shahrzad bank does not have any physical branch; But databases are located in Tabriz, Iran.</p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          When was Shahrzad founded?
+        </h3>
+        <p class="faq-text">Shahrzad was founded in 2023 by 4 Co-founders.</p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">Can i get a loan after creating an account?</h3>
+        <p class="faq-text">Loans are not supported currently, but hopefully in near future!</p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </div>
+    </div>
+        </div>
+      </div>
+    </main>
+    <script src="./fpgpage.js"></script>
+  </body>
+</html>
